@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            height: 960px;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Header */
+        header{
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            background-image: url(../img/background.png);
+        }
+        .logo{
+            flex: 8;
+            overflow: hidden;
+            display: flex;
+            color: white;
+            align-items: center;
+        }
+        img{
+            max-height: 100%;
+            width: auto;
+        }
+        .logo h1,h2{
+            margin: 0px;
+        }
+        nav{
+            flex: 2;
+            background-color: grey;
+        }
+        .top-menu ul{
+            display: flex;
+            padding-left: 20px;
+        }
+        .top-menu ul li{
+            list-style: none;
+            margin-right: 20px;
+        }
+        ul li a{
+            text-decoration: none;
+        }
+        /*content*/
+        .content{
+            height: 800px;
+            /* background-color: aquamarine; */
+            display: flex;
+        }
+        section{
+            flex: 2;
+            /* background-color: aqua; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 20px;
+            border-right: 3px solid gray;
+        }
+        article{
+            display: flex;
+            padding: 5px;
+        }
+        .i1{
+            flex: 1;
+            border: 1px groove grey;
+        }
+        .i1 img{
+            width: 98%;
+            padding: 4px;
+        }
+        .i2{
+            flex: 1;
+            margin-left: 10px;
+        }
+        aside{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 70%;
+        }
+        .a1{
+            color: red;
+        }
+        .a1 ul li{
+            list-style: none;
+            margin: 10px 0px 10px 0px;
+            border-bottom: 1px solid gray;
+            color: red;
+        }
+        .a1 ul li a{
+            color: red;
+        }
+        .a0{
+            margin-left: 20px;
+        }
+        footer{
+            height: 50px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        footer h3{
+            background-color: grey;
+            color: white;
+            width: 98%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="../img/logo.png" alt="">
+                <div class="hd2">
+                    <h1>YOKO'S KITCHEN</h1>
+                    <h2>JAPANESE COOKING CLASSES</h2>
+                </div>
+            </div>
+            <nav class="top-menu">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">classes</a></li>
+                    <li><a href="">catering</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <section>
+                <article class="item1">
+                    <div class="i1">
+                        <img src="../img/bokchoi.jpg" alt="">
+                        <p>Bok Choi</p>
+    
+                    </div>
+                    <div class="i2">
+                        <h2>Jpanense Vegetarian</h2>
+                        <h3>Five week course in London</h3>
+                        <p>A five week introduction to tradiional
+                            Japanense vegetarian meals, teaching you
+                             a selection of rice and noodle dishes.
+                        </p>
+                    </div>
+                </article>
+                <article class="item1">
+                    <div class="i1">
+                        <img src="../img/teriyaki.jpg" alt="">
+                        <p>Teriyaki Sauce</p>
+    
+                    </div>
+                    <div class="i2">
+                        <h2>Sauces Masterclass</h2>
+                        <h3>One day workshop</h3>
+                        <p>An intensive one-day course looking at how 
+                            to create the most delicious sauces for use 
+                            in a range of Japanese cookery.
+                            
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <aside>
+                <div class="a0 a1">
+                    <h2>Popular Recipies</h2>
+                    <ul>
+                        <li><a href="">Yakitori (grilled chicken)</a></li>
+                        <li><a href="">Tsukune (minced chicken patties)</a></li>
+                        <li><a href="">Okonomiyaki (savory pancakes)</a></li>
+                        <li><a href="">Mizutaki (chicken stew)</a></li>
+                    </ul>
+                </div>
+                <div class="a0 a2">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li>Yoko's Kitchen</li>
+                        <li>27 Redchurch Street</li>
+                        <li>Shoreditch</li>
+                        <li>London E2 7DP</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <footer>
+            <h3>2011 Yoko's Kitchen</h3>
+        </footer>
+    </div>
+</body>
+</html>
