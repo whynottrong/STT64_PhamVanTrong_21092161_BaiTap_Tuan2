@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-size: 20px;
+        }
+        .container{
+            margin: auto;
+            width: 800px;
+            border: 2px solid goldenrod;
+        }
+        header{
+            display: flex;
+            justify-content:flex-end;
+            height: 100px;
+        }
+        section{
+            display: flex;
+            border-top: 3px solid goldenrod;
+            position: relative;
+        }
+        .left{
+            flex: 2;
+            background-image: url(../img/back.jpg);
+            /* background-repeat: no-repeat; */
+            background-size: 100%;
+        }
+        .menu{
+            padding-left: 0px;
+            margin: 5px;
+        }
+        .menu li{
+            list-style: none;
+            border-bottom: 1px solid;
+            width: 80%;
+            padding: 5px;
+        }
+        .menu li a{
+            text-decoration: none;
+        }
+        .right{
+            flex: 8;
+            padding: 5px;
+        }
+        .right h1, h4{
+            color: goldenrod;
+        }
+        .right h4{
+            border-top: 2px solid goldenrod;
+            text-align: center;
+            margin: 0px;
+        }
+        .item{
+            position: absolute;
+            border: 2px solid grey;
+            width: 180px;
+            padding: 10px;
+            font-size: 16px;
+            background-color: antiquewhite;
+        }
+        .item1{
+            right: 60px;
+            top: 100px;
+        }
+        .item2
+        {
+            right: 60px;
+            bottom: 60px;
+        }
+        .item3{
+            left: 150px;
+            bottom: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="../img/scraps.jpg" alt="">
+        </header>
+        <section>
+            <div class="left">
+                <ul class="menu">
+                    <li><a href="../html/home.html">Home</a></li>
+                    <li><a href="">Getting Started</a></li>
+                    <li><a href="">Scrapbooking Tips</a></li>
+                    <li><a href="">Supply List</a></li>
+                    <li><a href="">Online Classes</a></li>
+                    <li><a href="">Sample pages</a></li>
+                    <li><a href="">Online Store</a></li>
+                    <li><a href="">Shopping cart</a></li>
+                    <li><a href="">Check out</a></li>
+                    <li><a href="">Your Account</a></li>
+                    <li><a href="">Older Status</a></li>
+                    <li><a href="">Wish List</a></li>
+                    <li><a href="">Customer Service</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Newsletter</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <h1>Sample from Online Scrapbooks</h1>
+                <img src="../img/sample.jpg" alt="">
+                <h4>Online Scrapbooks - 212 sunset drive - richmond, KY 40475 -(859) 555-8100</h4>
+            </div>
+            <div class="item item1">
+                <p>Cascading Style Sheets (CSS) is a fantastic tool to add layout to your websites. 
+                    It can save you a lot of time and it enables you to design websites in a completel
+                    y new way. CSS is a must for anyone working with web design.
+                    </p>
+            </div>
+            <div class="item item2">
+                <p>This tutorial will get you startedwith CSS 
+                    in just a few hours. It is easy to understand and it will 
+                teach you all the sophisticated techniques.</p></div>
+            <div class="item item3">
+                <p>Learning CSS is fun. As you go along 
+                    through the tutorial, remember to take 
+                    enough time to properly experiment 
+                    with what you learn in each lesson.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
